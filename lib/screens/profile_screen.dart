@@ -187,29 +187,51 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
-                          Container(
-                            height: 100.0,
-                            color: Colors.red,
-                            child: Row(
-                              children: [
-                                Container(
-                                  color: Colors.red,
-                                ),
-                                Text('hELLO'),
-                              ],
-                            ),
+                          VideoList(
+                            imageUrl:
+                                'https://www.narutoslugfestm.com/templates/narutoslugfest/images/naruto-leaves.png',
+                            subTitle: '23mins',
+                            textTitle:
+                                'How to create an Anime Character in Adobe Photoshop',
                           ),
-                          Container(
-                            height: 40.0,
+                          SizedBox(
+                            height: 20.0,
                           ),
-                          Container(
-                            height: 40.0,
+                          VideoList(
+                            imageUrl:
+                                'https://cdn.nationeditions.com/wp-content/uploads/2020/07/a2-1-696x391.jpg',
+                            subTitle: '2secs',
+                            textTitle: 'No Game No Life No Second?',
                           ),
-                          Container(
-                            height: 40.0,
+                          SizedBox(
+                            height: 20.0,
                           ),
-                          Container(
-                            height: 40.0,
+                          VideoList(
+                            imageUrl:
+                                'https://cdn.nationeditions.com/wp-content/uploads/2020/07/a2-1-696x391.jpg',
+                            subTitle: '23mins',
+                            textTitle:
+                                'Learn to create Facet in Adobe Illustrator',
+                          ),
+                          SizedBox(
+                            height: 20.0,
+                          ),
+                          VideoList(
+                            imageUrl:
+                                'https://cdn.nationeditions.com/wp-content/uploads/2020/07/a2-1-696x391.jpg',
+                            subTitle: '23mins',
+                            textTitle:
+                                'Learn to create Facet in Adobe Illustrator',
+                          ),
+                          SizedBox(
+                            height: 20.0,
+                          ),
+                          VideoList(
+                            imageUrl:
+                                'https://cdn.nationeditions.com/wp-content/uploads/2020/07/a2-1-696x391.jpg',
+                            subTitle: '23mins',
+                            textTitle:
+                                'Learn to create Facet in Adobe Illustrator',
                           ),
                         ],
                       ),
@@ -218,6 +240,52 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ),
               )
             ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class VideoList extends StatelessWidget {
+  const VideoList(
+      {@required this.textTitle,
+      @required this.subTitle,
+      @required this.imageUrl});
+  final String textTitle;
+  final String subTitle;
+  final String imageUrl;
+  @override
+  Widget build(BuildContext context) {
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(10.0),
+        border: Border.all(
+          color: Color(0xFFDDDDDD),
+        ),
+      ),
+      child: ListTile(
+        title: Text(
+          textTitle,
+          style: TextStyle(
+              fontSize: 12.0,
+              fontWeight: FontWeight.bold,
+              fontFamily: 'Poppins'),
+        ),
+        subtitle: Text(
+          subTitle,
+          style: TextStyle(color: Color(0xFFB2B2B2), fontFamily: 'Poppins'),
+        ),
+        leading: ConstrainedBox(
+          constraints: BoxConstraints(
+            minWidth: 44,
+            minHeight: 44,
+            maxWidth: 50,
+            maxHeight: 50,
+          ),
+          child: Image(
+            image: NetworkImage(imageUrl),
+            fit: BoxFit.cover,
           ),
         ),
       ),
