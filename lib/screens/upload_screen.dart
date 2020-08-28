@@ -55,8 +55,8 @@ class _UploadScreenState extends State<UploadScreen> {
                                 Text(
                                   'Tap to add a video',
                                   style: kSettingsButtonsTextStyle.copyWith(
-                                    color: Color(0xFFB7B7B7),
-                                  ),
+                                      color: Color(0xFFB7B7B7),
+                                      fontFamily: 'Poppins'),
                                 )
                               ],
                             ),
@@ -78,7 +78,8 @@ class _UploadScreenState extends State<UploadScreen> {
                                 'Name',
                                 style: TextStyle(
                                     color: Color(0xFFACACAC),
-                                    fontWeight: FontWeight.bold),
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'Poppins'),
                               ),
                               SizedBox(
                                 width: 280.0,
@@ -88,8 +89,8 @@ class _UploadScreenState extends State<UploadScreen> {
                                   '0/100',
                                   textAlign: TextAlign.end,
                                   style: TextStyle(
-                                    color: Color(0xFFACACAC),
-                                  ),
+                                      color: Color(0xFFACACAC),
+                                      fontFamily: 'Poppins'),
                                 ),
                               ),
                             ],
@@ -99,8 +100,8 @@ class _UploadScreenState extends State<UploadScreen> {
                               alignLabelWithHint: true,
                               hintText: 'eg: How to create a drone',
                               hintStyle: TextStyle(
-                                color: Color(0xFFACACAC),
-                              ),
+                                  color: Color(0xFFACACAC),
+                                  fontFamily: 'Poppins'),
                               enabledBorder: OutlineInputBorder(
                                 borderSide: BorderSide(
                                   color: Color(0xFFedebeb),
@@ -134,18 +135,19 @@ class _UploadScreenState extends State<UploadScreen> {
                             'Description',
                             style: TextStyle(
                                 color: Color(0xFFACACAC),
-                                fontWeight: FontWeight.bold),
+                                fontWeight: FontWeight.bold,
+                                fontFamily: 'Poppins'),
                           ),
                           SizedBox(
-                            width: 240.0,
+                            width: 220.0,
                           ),
                           Expanded(
                             child: Text(
                               '0/2000',
                               textAlign: TextAlign.end,
                               style: TextStyle(
-                                color: Color(0xFFACACAC),
-                              ),
+                                  color: Color(0xFFACACAC),
+                                  fontFamily: 'Poppins'),
                             ),
                           ),
                         ],
@@ -159,8 +161,8 @@ class _UploadScreenState extends State<UploadScreen> {
                             alignLabelWithHint: true,
                             hintText: 'Write video description...',
                             hintStyle: TextStyle(
-                              color: Color(0xFFACACAC),
-                            ),
+                                color: Color(0xFFACACAC),
+                                fontFamily: 'Poppins'),
                             enabledBorder: OutlineInputBorder(
                               borderSide: BorderSide(
                                 color: Color(0xFFedebeb),
@@ -205,18 +207,37 @@ class _UploadScreenState extends State<UploadScreen> {
                             Expanded(
                               flex: 10,
                               child: Text(
-                                'Allow Comments',
+                                'Allow comments',
                                 style: TextStyle(
                                     color: Color(0xFF555555),
-                                    fontWeight: FontWeight.bold),
+                                    fontWeight: FontWeight.bold,
+                                    fontFamily: 'Poppins'),
                               ),
                             ),
                           ],
                         ),
                       ),
-                      FlatButton(onPressed: (){
-                        //upload video button
-                      }, child: Text('UPLOAD VIDEO'))
+                      SizedBox(
+                        height: 90.0,
+                      ),
+                      Container(
+                        width: MediaQuery.of(context).size.width * 1,
+                        child: RaisedButton(
+                            padding: EdgeInsets.symmetric(vertical: 20.0),
+                            color: Color(0xFF709ADF),
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10.0)),
+                            onPressed: () {
+                              //upload video button
+                            },
+                            child: Text(
+                              'UPLOAD VIDEO',
+                              style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold),
+                            )),
+                      )
                     ],
                   ),
                 ),

@@ -144,7 +144,7 @@ class LoginScreen extends StatelessWidget {
                               ),
                             ),
                             TextSpan(
-                              text: ' Privacy Policy',
+                              text: 'Privacy Policy',
                               style: TextStyle(
                                 decoration: TextDecoration.underline,
                                 fontSize: 10.0,
