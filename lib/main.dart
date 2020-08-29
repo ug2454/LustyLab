@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lusty_labs/screens/login_screen.dart';
+import 'package:lusty_labs/screens/messages_Screen.dart';
 import 'package:lusty_labs/screens/profile_screen.dart';
 import 'package:lusty_labs/screens/settings_screen.dart';
 import 'package:lusty_labs/screens/upload_screen.dart';
@@ -14,7 +15,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ProfileScreen(),
+      home: MessagesScreen(),
+      // home: ProfileScreen(),
       // home: UploadScreen(),
       // home: SettingsScreen(),
       // home: LoginScreen(),

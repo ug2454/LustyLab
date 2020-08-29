@@ -8,3 +8,8 @@ const kPageTitleTextStyle = TextStyle(
 
 const kSettingsButtonsTextStyle =
     TextStyle(color: Colors.black, fontFamily: 'Poppins');
+
+const kMessageScreenTextStyle = TextStyle(
+    fontFamily: 'Poppins',
+    color: Color(0xFFAAAAAA),
+    fontWeight: FontWeight.bold);

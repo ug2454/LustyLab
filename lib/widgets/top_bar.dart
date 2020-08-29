@@ -4,7 +4,7 @@ import 'package:lusty_labs/constants.dart';
 class TopBar extends StatelessWidget {
   final String textTitle;
 
-  const TopBar({this.textTitle});
+  const TopBar({@required this.textTitle});
   @override
   Widget build(BuildContext context) {
     return Container(

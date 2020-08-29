@@ -224,7 +224,7 @@ class _UploadScreenState extends State<UploadScreen> {
                         width: MediaQuery.of(context).size.width * 1,
                         child: RaisedButton(
                             padding: EdgeInsets.symmetric(vertical: 20.0),
-                            color: Color(0xFF709ADF),
+                            color: Color(0xFFBDBDBD),
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10.0)),
                             onPressed: () {
