@@ -26,3 +26,7 @@ Messages Screen
 ![Finished App](https://media.discordapp.net/attachments/748749812303659069/749165326536540160/Screenshot_20200829-124509.jpg?width=297&height=660)
 ---
 
+Profile Screen
+
+![Finished App](https://media.discordapp.net/attachments/283947045163630593/749257208738349096/Screenshot_20200829-184927.jpg?width=297&height=660)
+---
